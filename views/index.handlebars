@@ -1,0 +1,25 @@
+<img src="300x300" alt="Burger" class="center">
+<h1>Burger Restaurant</h1>
+<h2>Burgers On Order</h2>
+<ol>
+  {{#each burgers}}
+    {{#unless devoured}}
+      <li>
+          {{burger_name}}
+          <button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
+            Devour it!
+          </button>
+      </li>
+    {{/unless}}
+  {{/each}}
+</ol>
+<h2>Burgers Eaten</h2>
+<ol>
+  {{#each burgers}}
+    {{#if devoured}}
+      <li>
+        {{burger_name}}
+      </li>
+    {{/if}}
+  {{/each}}
+</ol>
