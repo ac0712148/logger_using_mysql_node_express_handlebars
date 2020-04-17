@@ -1,0 +1,25 @@
+{
+    "name": "logger_using_mysql_node_express_handlebars",
+    "version": "1.0.0",
+    "description": "Burger logger with MySQL, Node, Express, Handlebars and a custom ORM using an MVC design",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ac0712148/logger_using_mysql_node_express_handlebars.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ac0712148/logger_using_mysql_node_express_handlebars/issues"
+    },
+    "homepage": "https://github.com/ac0712148/logger_using_mysql_node_express_handlebars#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^4.0.3",
+        "mysql": "^2.18.1"
+    }
+}
