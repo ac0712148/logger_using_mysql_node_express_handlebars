@@ -1,4 +1,5 @@
 var mysql = require('mysql');
+
 var connection;
 
 if (process.env.JAWSDB_URL) {
@@ -18,6 +19,5 @@ connection.connect(err => {
         console.error("error connecting: " + err.stack);
         return;
     }
-    // console.log("connected as id " + connection.threadId);
 });
 module.exports = connection;
