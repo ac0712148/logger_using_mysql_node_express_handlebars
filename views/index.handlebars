@@ -1,38 +1,47 @@
-<h1>Big Burger Restaurant</h1>
+<div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <h1>EAT DA BURGER</h1>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row ">
+        <div class="col "></div>
+        <div class="col ">
+            <div class="burger-list ">
+                <h2>Burgers to Eat</h2>
+                {{#each burgers}} {{#unless devoured}}
+                <div class="burger ">
+                    <p>{{burger_name}}</p>
+                    <button class="devour " data-id="{{id}} ">Devour!</button>
+                </div>
+                {{/unless}} {{/each}}
+            </div>
+        </div>
+        <div class="col ">
+            <div class="devoured-list ">
+                <h2>Devoured Burgers</h2>
+                {{#each burgers}} {{#if devoured}}
+                <div class="burger">
+                    <p>{{burger_name}}</p>
+                </div>
+                {{/if}} {{/each}}
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
 
-<h2>Burgers To Be EATEN!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      <li>
-          {{burger_name}}
-          <button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-            Devour it!
-          </button>
-      </li>
-    {{/unless}}
-  {{/each}}
-</ul>
 
-<h2>Burgers Eaten!</h2>
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      <li>
-        {{burger_name}}
-      </li>
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ba">Burger Name:</label>
-    <input type="text" class="form-control" id="newBurger" placeholder="Type a burrgerr!">
-  </div>
-
-  <button type="submit" id="newBurger btn">Add Burger</button>
-</form>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div class="form-container">
+                <h3>Add a Burger</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                    <button class="new-burger">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
