@@ -1,7 +1,7 @@
 <div class="row">
         <div class="col"></div>
         <div class="col">
-            <h1>EAT DA BURGER</h1>
+            <h1>Burger Restaurant</h1>
         </div>
         <div class="col"></div>
     </div>
@@ -9,18 +9,18 @@
         <div class="col "></div>
         <div class="col ">
             <div class="burger-list ">
-                <h2>Burgers to Eat</h2>
+                <h2>Burgers TO EAT!</h2>
                 {{#each burgers}} {{#unless devoured}}
                 <div class="burger ">
                     <p>{{burger_name}}</p>
-                    <button class="devour " data-id="{{id}} ">Devour!</button>
+                    <button class="devour " data-id="{{id}} ">DEVOUR IT!</button>
                 </div>
                 {{/unless}} {{/each}}
             </div>
         </div>
         <div class="col ">
             <div class="devoured-list ">
-                <h2>Devoured Burgers</h2>
+                <h2>Burgers Eaten</h2>
                 {{#each burgers}} {{#if devoured}}
                 <div class="burger">
                     <p>{{burger_name}}</p>
