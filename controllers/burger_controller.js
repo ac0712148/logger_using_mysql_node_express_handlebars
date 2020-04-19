@@ -23,4 +23,16 @@ router.post("/api/burgers", (req, res) => {
     });
 });
 
+router.put("/api/burgers/:id", (req, res) => {
+    const id = { id: req.params.id };
+    const updateDev = { devoured: req.body.devoured };
+
+    burger.update(updateDev, id, (result) => {
+        if (result.affectedRows === 0) {
+            return res.sendStatus(404);
+        }
+        res.sendStatus(200);
+    });
+});
+
 module.exports = router;
