@@ -2,6 +2,7 @@ body {
     background-color: orange;
 }
 
-.burger-name {
+.burger-name,
+.description {
     text-align: center;
 }
