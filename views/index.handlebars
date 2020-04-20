@@ -1,51 +1,57 @@
 <div class="row">
-        <div class="col"></div>
-        <div class="col">
-            <h1>Burger Restaurant</h1>
-        </div>
-        <div class="col"></div>
+    <div class="col"></div>
+    <div class="col">
+        <h1>Burger Restaurant</h1>
     </div>
-    <div class="row ">
-        <div class="col "></div>
-        <div class="col ">
-            <div class="burger-list ">
-                <h2>Burgers TO EAT!</h2>
-                {{#each burgers}} {{#unless devoured}}
-                <div class="row burger ">
-                    <div class="col burger-name">
-                        <p>{{burger_name}}</p>
-                    </div>
-                    <div class="col">
-                        <button class="devour " data-id="{{id}} ">DEVOUR IT!</button>
-                    </div>
-                </div>
-                {{/unless}} {{/each}}
-            </div>
-        </div>
-        <div class="col ">
-            <div class="devoured-list ">
-                <h2>Burgers Eaten</h2>
-                {{#each burgers}} {{#if devoured}}
-                <div class="burger">
+    <div class="col"></div>
+</div>
+
+<div class="row ">
+    <div class="col "></div>
+    <div class="col ">
+        <div class="burger-list ">
+            <h2>Burgers TO EAT!</h2>
+            {{#each burgers}} {{#unless devoured}}
+            <div class="row burger ">
+                <div class="col burger-name">
                     <p>{{burger_name}}</p>
                 </div>
-                {{/if}} {{/each}}
+                <div class="col">
+                    <button class="devour " data-id="{{id}} ">DEVOUR IT!</button>
+                </div>
             </div>
-        </div>
-        <div class="col"></div>
-    </div>
-
-
-
-    <div class="row">
-        <div class="col d-flex justify-content-center">
-            <div class="form-container">
-                <h3>Add a Burger</h3>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name">
-                    <button class="new-burger">Submit</button>
-                </form>
-            </div>
+            {{/unless}} {{/each}}
         </div>
     </div>
+    <div class="col ">
+        <div class="devoured-list ">
+            <h2>Burgers Eaten</h2>
+            {{#each burgers}} {{#if devoured}}
+            <div class="burger">
+                <p>{{burger_name}}</p>
+            </div>
+            {{/if}} {{/each}}
+        </div>
+    </div>
+    <div class="col"></div>
+</div>
+
+
+<div class="row">
+    <div class="col d-flex justify-content-center">
+        <div class="form-container">
+            <h3>Add a Burger</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <button class="new-burger">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="row description">
+    <div class="col">
+        <p>This app is designed to demonstrate the use of MySQL, Node, Express, Handlebars and a custom ORM using an MVC design pattern.</p>
+    </div>
+</div>
