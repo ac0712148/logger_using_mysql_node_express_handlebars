@@ -11,9 +11,13 @@
             <div class="burger-list ">
                 <h2>Burgers TO EAT!</h2>
                 {{#each burgers}} {{#unless devoured}}
-                <div class="burger ">
-                    <p>{{burger_name}}</p>
-                    <button class="devour " data-id="{{id}} ">DEVOUR IT!</button>
+                <div class="row burger ">
+                    <div class="col">
+                        <p>{{burger_name}}</p>
+                    </div>
+                    <div class="col">
+                        <button class="devour " data-id="{{id}} ">DEVOUR IT!</button>
+                    </div>
                 </div>
                 {{/unless}} {{/each}}
             </div>
