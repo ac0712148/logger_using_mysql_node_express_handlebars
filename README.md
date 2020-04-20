@@ -5,9 +5,9 @@ Burger logger with MySQL, Node, Express, Handlebars and a custom ORM using an MV
 ## Table of Contents
   
   * [Description](#description)
-  * [File Structure](#file_structure)
-  * [Installation and Dependencies](#installation)
-  * [Usage](#usage)
+  * [File Structure](#file-structure)
+  * [Installation and Dependencies](#installation-and-dependencies)
+  * [Purpose](#purpose)
 
 ## Description
 
@@ -57,9 +57,11 @@ code simplified and independent of each modules.
 
 ## Installation and Dependencies
 
-To run this script, we must install the dependencies for this project. The main dependencies are  `inquirer` and `mySQL` to properly run the script.
- We also added a `console.table` package to render tables properly to the console. Running `npm install` should take care of the dependencies.
+To get the application running, we must install the dependencies for this project. The main dependencies are  `express`, `express-handlebars`, and 
+`mysql` to properly run the server properly. With the `package.json` in your directore, running `npm install` should take care of the dependencies.
 
-## Usage
+## Purpose
 
-The purpose of using this project is to utilize mySQL database to store, view or modify data. 
+The purpose of this project is to utilize mySQL database to store, view or modify data. The use of express, a framework for Node JS, allows 
+us to communicate with the server and with the use of a custom ORM, simplifies and modularizes code. Finally, the use of handlebars allows us to 
+dynamically create html for rendering the most up to date information.
